@@ -25,4 +25,4 @@ Desenvolver um sistema que seja intuitivo e responsivo com a finalidade de marca
 
 # Autor
 
-[<img src="imagem/Deivid.jpg" width=95><br><sub>Deivid Galindo</sub>](https://github.com/DeividGalindo) |
+[<img src="imagem/Deivid.jpg" width=95><br><sub>Deivid Galindo</sub>](https://github.com/DeividGalindo)

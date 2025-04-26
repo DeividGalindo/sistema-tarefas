@@ -1,6 +1,6 @@
 // Seleciona os elementos do DOM
 const taskForm = document.getElementById('formulario-tarefas');
-const taskInput = document.getElementById('tares'); 
+const taskInput = document.getElementById('tarefas'); 
 const taskDescInput = document.getElementById('descricao');
 const taskList = document.getElementById('listaTarefas');
 const totalTasks = document.getElementById('totalTarefas');
@@ -85,4 +85,42 @@ function renderTasks() {
     });
 
     updateCounts();
+}
+
+// Alterna entre concluído e não concluído
+function toggleComplete(id) {
+    tasks = tasks.map(task =>
+        task.id === id ? { ...task, completed: !task.completed } : task
+    );
+    renderTasks();
+}
+
+// Edita uma tarefa existente
+function editTask(id) {
+    const task = tasks.find(task => task.id === id);
+    const newText = prompt('Editar título da tarefa:', task.text);
+    const newDesc = prompt('Editar descrição da tarefa:', task.description);
+    if (newText !== null && newText.trim() !== '') {
+        tasks = tasks.map(task =>
+            task.id === id
+                ? { ...task, text: newText.trim(), description: newDesc.trim() }
+                : task
+        );
+        renderTasks();
+    }
+}
+
+// Remove uma tarefa da lista
+function removeTask(id) {
+    if (confirm('Tem certeza que deseja remover esta tarefa?')) {
+        tasks = tasks.filter(task => task.id !== id);
+        renderTasks();
+    }
+}
+
+// Atualiza os contadores de tarefas
+function updateCounts() {
+    totalTasks.textContent = `Total: ${tasks.length}`;
+    const completed = tasks.filter(task => task.completed).length;
+    completedTasks.textContent = `Concluídas: ${completed}`;
 }

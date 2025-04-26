@@ -1,4 +1,4 @@
-<h1 align="center">Projeto Sistema de Tarefas</h1>
+<h1 align="center">📝 Projeto Sistema de Tarefas</h1>
 
 ## Descrição do projeto
 
@@ -11,13 +11,13 @@ Desenvolver um sistema que seja intuitivo e responsivo com a finalidade de marca
 - Implementar funções que seja possível marcar as tarefas como concluidas, que seja possível fazer edições tanto na tarefa como na descrição, e que seja possivel apagar a tarefa.
 - Garantir a compatibilidade do sistema com dispositivos móveis, proporcionando uma experiência fluída e responsiva em smartphones e tablets.
 
-### Linguagens de programação
+### 🛠 Linguagens de programação
 
 ``HTML5``: Será utilizado para a estruturação do conteúdo do sistema, criando os titulos, formulários e organizando as informações de forma semântica e acessível. O HTML proporcionará a base do sistema, garantindo que todos os elementos sejam corretamente dispostos.  
 ``Bootstrap 5.3.2``: Responsável pela estilização e layout do sistema. Utilizamos o Bootstrap para definir a aparência visual, como cores, fontes, espaçamento e responsividade, garantindo que o sistema tenha um design atraente e adaptável a diferentes tamanhos de tela.  
 ``Java Script``: Será utilizado para adicionar interatividade ao sistema, implementando funcionalidades como botão de excluir, concluir e editar. O JavaScript também permitirá melhorar a experiência do usuário, tornando o sistema mais interativo e fluido.
 
-## Preview
+## 📸 Preview
 
 ![preview](preview/projeto.jpg)
 
